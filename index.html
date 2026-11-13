@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Rehemet Muhamed — Software Engineer, Front-End & JavaScript Developer
+    </title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Top Navigation Bar -->
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="#home" class="brand-logo">
+          <span class="logo-box">RM</span>
+          <span class="logo-text">Rehemet<span class="dot">.dev</span></span>
+        </a>
+
+        <nav class="nav-menu" id="navMenu">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About & Skills</a>
+          <a href="#live-sandbox" class="nav-link">Live Projects</a>
+          <a href="#case-studies" class="nav-link">Case Studies</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button
+            class="icon-btn"
+            id="themeToggle"
+            aria-label="Toggle Dark Mode"
+            title="Toggle Theme"
+          >
+            <svg
+              id="moonIcon"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <svg
+              id="sunIcon"
+              class="hidden"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+          <button
+            class="icon-btn mobile-menu-btn"
+            id="menuToggle"
+            aria-label="Toggle Menu"
+          >
+            <svg
+              width="22"
+              height="22"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-glow"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="availability-pill">
+            <span class="pulse-dot"></span>
+            Available for Software Engineering & Web Development Roles
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-name">Rehemet Muhamed.</span>
+          </h1>
+
+          <div class="typewriter-line">
+            <span class="prompt">&gt;</span>
+            <span id="typewriterText">JavaScript Developer</span
+            ><span class="cursor-block"></span>
+          </div>
+
+          <p class="hero-subtitle">
+            I architect clean, responsive, and data-driven web applications that
+            solve real-world operational challenges—from healthcare pharmacy
+            inventory systems to academic student management platforms.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#live-sandbox" class="btn btn-primary">
+              <svg
+                width="18"
+                height="18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.2"
+                viewBox="0 0 24 24"
+              >
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              Launch Live Projects
+            </a>
+            <a href="#case-studies" class="btn btn-secondary">
+              <svg
+                width="18"
+                height="18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+              Explore Case Studies
+            </a>
+          </div>
+
+          <!-- Social & Direct Contact Links -->
+          <div class="social-links">
+            <a
+              href="mailto:rahmimuhe6@gmail.com"
+              class="social-pill"
+              title="Email Rehemet Muhamed"
+            >
+              <svg
+                width="18"
+                height="18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+              rahmimuhe6@gmail.com
+            </a>
+            <a
+              href="https://github.com/Rahmi1618"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-pill"
+            >
+              <svg
+                width="18"
+                height="18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/rehemet-muhamed-42524044b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-pill"
+            >
+              <svg
+                width="18"
+                height="18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <!-- Profile Photo Slot (Place your image as profile.jpg in the same folder) -->
+        <div class="hero-image-wrapper">
+          <div class="photo-frame">
+            <img
+              src="Rehemet.jpg"
+              alt="Rehemet Muhamed"
+              class="profile-photo"
+              onerror="
+                this.style.display = 'none';
+                this.nextElementSibling.style.display = 'flex';
+              "
+            />
+            <div class="photo-fallback" style="display: none">
+              <span>RM</span>
+              <small>Add profile.jpg</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Skills Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Engineering Profile</span>
+          <h2>About Me & Core Stack</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <h3>Software Engineer, Front-End & JavaScript Developer</h3>
+            <p>
+              I am <strong>Rehemet Muhamed</strong>, a Software Engineer focused
+              on building fast, accessible, and maintainable web solutions. I
+              specialize in turning complex business workflows—such as
+              pharmaceutical stock control, point-of-sale billing, and
+              university student administration—into intuitive browser
+              experiences.
+            </p>
+            <p>
+              Every project is engineered with clean modular JavaScript,
+              responsive CSS architectures, and persistent client-side state
+              management.
+            </p>
+          </div>
+
+          <div class="skills-card">
+            <h3>Technical Competencies</h3>
+            <div class="skills-tags">
+              <span class="skill-chip">HTML5 Semantic Architecture</span>
+              <span class="skill-chip">CSS3 / Grid & Flexbox</span>
+              <span class="skill-chip">JavaScript (ES6+)</span>
+              <span class="skill-chip">DOM Manipulation</span>
+              <span class="skill-chip">LocalStorage State Engine</span>
+              <span class="skill-chip">RESTful API Integration</span>
+              <span class="skill-chip">UI/UX Responsive Design</span>
+              <span class="skill-chip">Git & Version Control</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Live Projects Sandbox -->
+    <section id="live-sandbox" class="section sandbox-bg">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Interactive Application Suite</span>
+          <h2>Live Functional Projects</h2>
+          <p class="section-desc">
+            Switch between both full-featured web applications below. All
+            records persist automatically in your browser via LocalStorage.
+          </p>
+        </div>
+
+        <!-- App Switcher Tabs -->
+        <div class="app-switcher">
+          <button class="switch-tab active" data-target="pharmacare-app">
+            <span class="tab-icon">💊</span>
+            PharmaCare — Pharmacy & Inventory POS
+          </button>
+          <button class="switch-tab" data-target="student-app">
+            <span class="tab-icon">🎓</span>
+            Student Management System
+          </button>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- APP 1: PHARMACARE SYSTEM                   -->
+        <!-- ========================================== -->
+        <div id="pharmacare-app" class="app-workspace active">
+          <!-- KPI Cards -->
+          <div class="kpi-row">
+            <div class="kpi-card">
+              <span class="kpi-label">Total Medicines</span>
+              <strong class="kpi-value" id="pharmaTotalItems">0</strong>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-label">Inventory Valuation</span>
+              <strong class="kpi-value" id="pharmaTotalValue">$0.00</strong>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-label">Low Stock Alerts (&lt;10)</span>
+              <strong class="kpi-value text-danger" id="pharmaLowStock"
+                >0</strong
+              >
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-label">Completed Sales</span>
+              <strong class="kpi-value text-success" id="pharmaSalesCount"
+                >0</strong
+              >
+            </div>
+          </div>
+
+          <div class="pharma-layout">
+            <!-- Left: Inventory Management -->
+            <div class="workspace-panel">
+              <div class="panel-header">
+                <h3>Medicine Inventory Control</h3>
+                <div class="filter-controls">
+                  <input
+                    type="text"
+                    id="pharmaSearch"
+                    placeholder="Search medicine or batch..."
+                  />
+                  <select id="pharmaCategoryFilter">
+                    <option value="ALL">All Categories</option>
+                    <option value="Antibiotic">Antibiotic</option>
+                    <option value="Analgesic">Analgesic</option>
+                    <option value="Cardiovascular">Cardiovascular</option>
+                    <option value="Supplement">Supplement</option>
+                  </select>
+                </div>
+              </div>
+
+              <form id="addMedicineForm" class="smart-form">
+                <input
+                  type="text"
+                  id="medName"
+                  placeholder="Medicine Name (e.g., Amoxicillin 500mg)"
+                  required
+                />
+                <select id="medCategory" required>
+                  <option value="">Category</option>
+                  <option value="Antibiotic">Antibiotic</option>
+                  <option value="Analgesic">Analgesic</option>
+                  <option value="Cardiovascular">Cardiovascular</option>
+                  <option value="Supplement">Supplement</option>
+                </select>
+                <input
+                  type="number"
+                  id="medQty"
+                  placeholder="Stock Qty"
+                  min="1"
+                  required
+                />
+                <input
+                  type="number"
+                  id="medPrice"
+                  placeholder="Price ($)"
+                  step="0.01"
+                  min="0.01"
+                  required
+                />
+                <input
+                  type="date"
+                  id="medExpiry"
+                  required
+                  title="Expiry Date"
+                />
+                <button type="submit" class="btn btn-primary btn-sm">
+                  + Add Stock
+                </button>
+              </form>
+
+              <div class="table-scroll">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Medicine</th>
+                      <th>Category</th>
+                      <th>Stock</th>
+                      <th>Expiry</th>
+                      <th>Price</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody id="pharmaTableBody"></tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Right: Prescription & Billing POS -->
+            <div class="workspace-panel pos-panel">
+              <div class="panel-header">
+                <h3>Prescription & Billing POS</h3>
+                <button class="btn-link-danger" id="clearCartBtn">Clear</button>
+              </div>
+
+              <div class="patient-box">
+                <input
+                  type="text"
+                  id="patientName"
+                  placeholder="Patient / Customer Name"
+                  value="Walk-in Patient"
+                />
+              </div>
+
+              <div id="posCartList" class="pos-cart-list">
+                <p class="empty-msg">
+                  Click "+ Bill" on any medicine to add to prescription.
+                </p>
+              </div>
+
+              <div class="pos-summary">
+                <div class="summary-row">
+                  <span>Subtotal</span>
+                  <span id="posSubtotal">$0.00</span>
+                </div>
+                <div class="summary-row">
+                  <span>VAT (5%)</span>
+                  <span id="posTax">$0.00</span>
+                </div>
+                <div class="summary-row total-row">
+                  <span>Total Payable</span>
+                  <span id="posTotal">$0.00</span>
+                </div>
+                <button id="checkoutBtn" class="btn btn-success full-width">
+                  Complete Dispense & Print Receipt
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- APP 2: STUDENT MANAGEMENT SYSTEM           -->
+        <!-- ========================================== -->
+        <div id="student-app" class="app-workspace">
+          <!-- KPI Cards -->
+          <div class="kpi-row">
+            <div class="kpi-card">
+              <span class="kpi-label">Total Enrolled</span>
+              <strong class="kpi-value" id="stuTotalCount">0</strong>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-label">Average Campus GPA</span>
+              <strong class="kpi-value" id="stuAvgGpa">0.00</strong>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-label">Dean's List (&ge;3.50)</span>
+              <strong class="kpi-value text-success" id="stuDeansCount"
+                >0</strong
+              >
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-label">Active Departments</span>
+              <strong class="kpi-value" id="stuDeptCount">0</strong>
+            </div>
+          </div>
+
+          <div class="workspace-panel">
+            <div class="panel-header">
+              <h3>Student Academic Directory</h3>
+              <div class="filter-controls">
+                <input
+                  type="text"
+                  id="stuSearch"
+                  placeholder="Search by name or ID..."
+                />
+                <select id="stuDeptFilter">
+                  <option value="ALL">All Departments</option>
+                  <option value="Software Engineering">
+                    Software Engineering
+                  </option>
+                  <option value="Computer Science">Computer Science</option>
+                  <option value="Information Systems">
+                    Information Systems
+                  </option>
+                  <option value="Data Science">Data Science</option>
+                </select>
+              </div>
+            </div>
+
+            <form id="studentForm" class="smart-form">
+              <input type="hidden" id="editStudentIndex" value="-1" />
+              <input
+                type="text"
+                id="stuId"
+                placeholder="Student ID (e.g., SE-2026-01)"
+                required
+              />
+              <input
+                type="text"
+                id="stuName"
+                placeholder="Full Name"
+                required
+              />
+              <select id="stuDept" required>
+                <option value="">Select Department</option>
+                <option value="Software Engineering">
+                  Software Engineering
+                </option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Information Systems">Information Systems</option>
+                <option value="Data Science">Data Science</option>
+              </select>
+              <select id="stuYear" required>
+                <option value="">Academic Year</option>
+                <option value="Year 1">Year 1</option>
+                <option value="Year 2">Year 2</option>
+                <option value="Year 3">Year 3</option>
+                <option value="Year 4">Year 4</option>
+              </select>
+              <input
+                type="number"
+                id="stuGpa"
+                placeholder="GPA (0.00 - 4.00)"
+                step="0.01"
+                min="0"
+                max="4.0"
+                required
+              />
+              <button
+                type="submit"
+                id="stuSubmitBtn"
+                class="btn btn-primary btn-sm"
+              >
+                + Enroll Student
+              </button>
+            </form>
+
+            <div class="table-scroll">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Student ID</th>
+                    <th>Full Name</th>
+                    <th>Department</th>
+                    <th>Year</th>
+                    <th>GPA</th>
+                    <th>Academic Standing</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="stuTableBody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="case-studies" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Architecture Breakdown</span>
+          <h2>Featured Case Studies</h2>
+        </div>
+
+        <div class="case-grid">
+          <article class="case-card">
+            <div class="case-badge">Healthcare & Retail Tech</div>
+            <h3>PharmaCare Inventory & POS Engine</h3>
+            <p>
+              Designed to eliminate manual ledger errors in community
+              pharmacies. Features real-time low-stock threshold detection,
+              expiry date tracking, instant category filtering, and an
+              integrated prescription billing cart that automatically calculates
+              VAT and deducts dispensed stock upon checkout.
+            </p>
+            <ul class="case-highlights">
+              <li>Automated inventory deduction on POS checkout</li>
+              <li>Visual expiry and low-stock warning badges</li>
+              <li>Zero-latency client-side search & filtering</li>
+            </ul>
+          </article>
+
+          <article class="case-card">
+            <div class="case-badge">EdTech & Administration</div>
+            <h3>Student Management & GPA Analytics</h3>
+            <p>
+              A streamlined academic records system engineered for university
+              registrars and department heads. Supports full CRUD operations
+              (Create, Read, Update, Delete), real-time GPA aggregation,
+              automatic Dean's List honor classification, and multi-department
+              filtering.
+            </p>
+            <ul class="case-highlights">
+              <li>Live KPI dashboard computing campus-wide GPA</li>
+              <li>Inline record editing with duplicate ID validation</li>
+              <li>Persistent browser storage with instant reset support</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section sandbox-bg">
+      <div class="container contact-container">
+        <div class="section-heading">
+          <span class="eyebrow">Get In Touch</span>
+          <h2>Let's Build Together</h2>
+          <p class="section-desc">
+            Have a software engineering opportunity or project idea? Reach out
+            directly via email, LinkedIn, GitHub, or the form below.
+          </p>
+          <!-- Social & Direct Contact Links -->
+          <div class="social-links">
+            <a
+              href="mailto:rahmimuhe6@gmail.com"
+              class="social-pill"
+              title="Email Rehemet Muhamed"
+            >
+              <svg
+                width="18"
+                height="18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+              rahmimuhe6@gmail.com
+            </a>
+            <a
+              href="https://github.com/Rahmi1618"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-pill"
+            >
+              <svg
+                width="18"
+                height="18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/rehemet-muhamed-42524044b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-pill"
+            >
+              <svg
+                width="18"
+                height="18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <form id="contactForm" class="contact-card" novalidate>
+          <div class="form-row">
+            <div class="field-group">
+              <label for="contactName">Your Name</label>
+              <input
+                type="text"
+                id="contactName"
+                placeholder="e.g., Sara Ahmed"
+              />
+              <small class="error-msg" id="nameError"></small>
+            </div>
+            <div class="field-group">
+              <label for="contactEmail">Email Address</label>
+              <input
+                type="email"
+                id="contactEmail"
+                placeholder="sara@example.com"
+              />
+              <small class="error-msg" id="emailError"></small>
+            </div>
+          </div>
+          <div class="field-group">
+            <label for="contactMessage">Project Details or Message</label>
+            <textarea
+              id="contactMessage"
+              rows="4"
+              placeholder="Tell me about your project or role..."
+            ></textarea>
+            <small class="error-msg" id="msgError"></small>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="brand-logo">
+          <span class="logo-box">RM</span>
+          <span class="logo-text">Rehemet<span class="dot">.dev</span></span>
+        </div>
+        <p>
+          &copy; 2026 Rehemet Muhamed &mdash; Software Engineer. Engineered with
+          HTML5, CSS3 & Vanilla JavaScript.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Toast Notification Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
